@@ -1,6 +1,7 @@
 body {
     background-color: #fadec0;
-    margin: 0;
+    margin: 0 ;
+    font-family: Arial, sans-serif;
 }
 
 .navegacion {
@@ -242,4 +243,16 @@ body {
     width: 70px;
     margin: 10px;
     filter: brightness(0) invert(1); 
+}
+
+@media (max-width: 650px) {
+    body {
+        width: 100%;
+        font-size: 16px;
+    }
+    .navegacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 }
