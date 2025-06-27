@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="img" href="img/expresso.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Café Colombiano</title>
 </head>
 <body>
@@ -119,10 +120,10 @@
             </p>
         </div>
         <form action="/enviar" class="formulario">
-            <input type="text" class="a" name="nombre" placeholder="Nombre" required>
-            <input type="email" class="a" name="email" placeholder="Correo Electronico" required>
-            <input type="text" class="a" name="mensaje" placeholder="Mensaje" id="">
-            <input type="submit" class="enviar" value="enviar">
+            <input type="text" id="pregunta" class="a" name="nombre" placeholder="Nombre" required>
+            <input type="email" id="pregunta1" class="a" name="email" placeholder="Correo Electronico" required>
+            <input type="text" id="pregunta2" class="a" name="mensaje" placeholder="Mensaje" id="">
+            <button class="enviar" id="btnEnviar">Enviar</button>
         </form>
     </section>
     <footer class="footer">
@@ -133,6 +134,6 @@
         <img src="img/logo-de-facebook.png" alt="facebook">
         <img src="img/logotipo-de-twitter-sobre-fondo-negro.png" alt="twitter">
     </footer>
-    
+    <script src="index.js"></script>
 </body>
 </html>
